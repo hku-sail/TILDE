@@ -53,7 +53,8 @@
         <p class="is-size-5 publication-affiliations">The University of Hong Kong</p>
         <p class="author-note"><sup>*</sup> Equal contribution</p>
         <div class="publication-links">
-          <button class="button is-rounded is-dark" type="button" disabled title="arXiv link coming soon">
+          <a href="https://arxiv.org/abs/2610.25376" target="_blank" rel="noopener noreferrer"
+            class="button is-rounded is-dark">
             <span class="icon" aria-hidden="true">
               <!-- arXiv mark from Simple Icons (CC0): https://github.com/simple-icons/simple-icons/blob/develop/icons/arxiv.svg -->
               <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" focusable="false">
@@ -63,18 +64,18 @@
               </svg>
             </span>
             <span>arXiv</span>
-          </button>
+            </button>
 
-          <a href="https://github.com/hku-sail/TILDE" target="_blank" rel="noopener noreferrer"
-            class="button is-rounded is-dark">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor">
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
-              </svg>
-            </span>
-            <span>Code</span>
-          </a>
+            <a href="https://github.com/hku-sail/TILDE" target="_blank" rel="noopener noreferrer"
+              class="button is-rounded is-dark">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+                </svg>
+              </span>
+              <span>Code</span>
+            </a>
         </div>
       </div>
     </div>
@@ -130,8 +131,9 @@
               <strong>E</strong>FMs), which synergizes
               on-policy distillation at student-induced states with
               learning from teacher-executed recovery trajectories. We further propose AutoDAgger, an
-              autonomous data aggregation pipeline in which a robotic reward model monitors task progress and triggers
-              teacher intervention, thereby collecting recovery experience without human monitoring or manual control.
+              autonomous data aggregation pipeline in which a robotic reward model is utilized to monitor task
+              progress and trigger teacher intervention, thereby collecting recovery experience without human monitoring
+              or manual control.
               AutoDAgger accelerates recovery-trajectory collection by more than 2× compared with the
               human-in-the-loop method. By unifying learning from demonstrations, on-policy teacher supervision, and
               teacher's corrective behavior, TILDE improves task performance by up to 4.1× over
@@ -214,7 +216,8 @@
             <h4 class="autodagger-demo-title" id="autodagger-demo-title">AutoDAgger Execution and Outcomes</h4>
             <div class="autodagger-scenarios" role="group" aria-label="Select an AutoDAgger outcome">
               <button type="button" data-autodagger-scenario="student-success">Student Success</button>
-              <button type="button" data-autodagger-scenario="teacher-success" class="is-active">Teacher Success</button>
+              <button type="button" data-autodagger-scenario="teacher-success" class="is-active">Teacher
+                Success</button>
               <button type="button" data-autodagger-scenario="teacher-failure">Teacher Failure</button>
             </div>
           </div>
@@ -222,27 +225,42 @@
           <div class="autodagger-stage" aria-live="polite">
             <svg class="autodagger-arrow-defs" aria-hidden="true">
               <defs>
-                <marker id="autodagger-arrow" viewBox="0 0 4 4" markerWidth="4" markerHeight="4" refX="3.5" refY="2" markerUnits="strokeWidth" orient="auto"><path d="M .5 .5 L 3.5 2 L .5 3.5" fill="none" stroke="#5e7f9f" stroke-width="1"></path></marker>
+                <marker id="autodagger-arrow" viewBox="0 0 4 4" markerWidth="4" markerHeight="4" refX="3.5" refY="2"
+                  markerUnits="strokeWidth" orient="auto">
+                  <path d="M .5 .5 L 3.5 2 L .5 3.5" fill="none" stroke="#5e7f9f" stroke-width="1"></path>
+                </marker>
               </defs>
             </svg>
             <div class="autodagger-node autodagger-student" data-ad-node="student">
               <span class="autodagger-node-icon" aria-hidden="true">S</span>
-              <span class="autodagger-node-copy"><strong>Student Policy</strong><small data-ad-student-label>Executing task</small></span>
+              <span class="autodagger-node-copy"><strong>Student Policy</strong><small data-ad-student-label>Executing
+                  task</small></span>
             </div>
-            <div class="autodagger-link" data-ad-link="student-monitor" aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+            <div class="autodagger-link" data-ad-link="student-monitor" aria-hidden="true"><svg viewBox="0 0 100 10"
+                preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-node autodagger-monitor" data-ad-node="monitor">
               <span class="autodagger-node-icon" aria-hidden="true">M</span>
-              <span class="autodagger-node-copy"><strong>Task Monitor</strong><small data-ad-monitor-label>Tracking execution</small></span>
+              <span class="autodagger-node-copy"><strong>Task Monitor</strong><small data-ad-monitor-label>Tracking
+                  execution</small></span>
             </div>
-            <div class="autodagger-link" data-ad-link="monitor-student-manager" aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+            <div class="autodagger-link" data-ad-link="monitor-student-manager" aria-hidden="true"><svg
+                viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-node autodagger-manager" data-ad-node="studentManager">
               <span class="autodagger-node-icon" aria-hidden="true">!</span>
               <span class="autodagger-node-copy"><strong>Execution Manager</strong><small
                   data-ad-student-manager-label>Continue execution</small></span>
             </div>
-            <div class="autodagger-trigger-return" data-ad-link="student-manager-student" aria-hidden="true"><svg><path></path></svg></div>
+            <div class="autodagger-trigger-return" data-ad-link="student-manager-student" aria-hidden="true"><svg>
+                <path></path>
+              </svg></div>
             <div class="autodagger-link autodagger-student-outcome-link" data-ad-link="student-manager-outcome"
-              aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+              aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-link" data-ad-link="student-manager-teacher" aria-hidden="true">
               <svg focusable="false" aria-hidden="true">
                 <path data-ad-takeover-path></path>
@@ -253,20 +271,31 @@
               <span class="autodagger-node-copy"><strong>Teacher Policy</strong><small
                   data-ad-teacher-label>Waiting</small></span>
             </div>
-            <div class="autodagger-link" data-ad-link="teacher-teacher-monitor" aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+            <div class="autodagger-link" data-ad-link="teacher-teacher-monitor" aria-hidden="true"><svg
+                viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-node autodagger-monitor" data-ad-node="teacherMonitor">
               <span class="autodagger-node-icon" aria-hidden="true">M</span>
               <span class="autodagger-node-copy"><strong>Task Monitor</strong><small
                   data-ad-teacher-monitor-label>Waiting</small></span>
             </div>
-            <div class="autodagger-link" data-ad-link="teacher-monitor-teacher-manager" aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+            <div class="autodagger-link" data-ad-link="teacher-monitor-teacher-manager" aria-hidden="true"><svg
+                viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-node autodagger-manager" data-ad-node="teacherManager">
               <span class="autodagger-node-icon" aria-hidden="true">!</span>
               <span class="autodagger-node-copy"><strong>Execution Manager</strong><small
                   data-ad-teacher-manager-label>Waiting</small></span>
             </div>
-            <div class="autodagger-teacher-return" data-ad-link="teacher-manager-teacher" aria-hidden="true"><svg><path></path></svg></div>
-            <div class="autodagger-link" data-ad-link="teacher-manager-outcome" aria-hidden="true"><svg viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M 0 5 H 100"></path></svg></div>
+            <div class="autodagger-teacher-return" data-ad-link="teacher-manager-teacher" aria-hidden="true"><svg>
+                <path></path>
+              </svg></div>
+            <div class="autodagger-link" data-ad-link="teacher-manager-outcome" aria-hidden="true"><svg
+                viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M 0 5 H 100"></path>
+              </svg></div>
             <div class="autodagger-node autodagger-outcome" data-ad-node="outcome">
               <span class="autodagger-node-icon" aria-hidden="true">✓</span>
               <span class="autodagger-node-copy"><strong data-ad-outcome-title>Retain Trajectory</strong><small
@@ -519,14 +548,12 @@
                           </div>
                         </div>
                         <div class="task-bar-wrap" role="listitem" aria-label="OPD: 58.3">
-                          <div class="task-bar task-method-opd" style="height: 58.3%;"
-                            title="Pick Pen — OPD: 58.3">
+                          <div class="task-bar task-method-opd" style="height: 58.3%;" title="Pick Pen — OPD: 58.3">
                             <span class="task-bar-value">58.3</span>
                           </div>
                         </div>
                         <div class="task-bar-wrap" role="listitem" aria-label="TILDE: 80.6">
-                          <div class="task-bar task-method-tilde" style="height: 80.6%;"
-                            title="Pick Pen — TILDE: 80.6">
+                          <div class="task-bar task-method-tilde" style="height: 80.6%;" title="Pick Pen — TILDE: 80.6">
                             <span class="task-bar-value">80.6</span>
                           </div>
                         </div>
@@ -616,8 +643,8 @@
                       <div class="task-group" role="group" aria-label="Fold Dishcloth">
                         <div class="task-bars" role="list" aria-label="Fold Dishcloth scores">
                           <div class="task-bar-wrap" role="listitem" aria-label="Offline Distill: 27.8">
-                            <div class="task-bar task-method-offline"
-                              style="height: 27.8%;" title="Fold Dishcloth — Offline Distill: 27.8">
+                            <div class="task-bar task-method-offline" style="height: 27.8%;"
+                              title="Fold Dishcloth — Offline Distill: 27.8">
                               <span class="task-bar-value">27.8</span>
                             </div>
                           </div>
@@ -628,8 +655,8 @@
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="+ Recovery Distill: 54.2">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 54.2%;" title="Fold Dishcloth — + Recovery Distill: 54.2">
+                            <div class="task-bar task-method-recovery-distill" style="height: 54.2%;"
+                              title="Fold Dishcloth — + Recovery Distill: 54.2">
                               <span class="task-bar-value">54.2</span>
                             </div>
                           </div>
@@ -645,20 +672,19 @@
                       <div class="task-group" role="group" aria-label="Pick Pen">
                         <div class="task-bars" role="list" aria-label="Pick Pen scores">
                           <div class="task-bar-wrap" role="listitem" aria-label="Offline Distill: 45.4">
-                            <div class="task-bar task-method-offline"
-                              style="height: 45.4%;" title="Pick Pen — Offline Distill: 45.4">
+                            <div class="task-bar task-method-offline" style="height: 45.4%;"
+                              title="Pick Pen — Offline Distill: 45.4">
                               <span class="task-bar-value">45.4</span>
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="+ OPD: 58.3">
-                            <div class="task-bar task-method-opd" style="height: 58.3%;"
-                              title="Pick Pen — + OPD: 58.3">
+                            <div class="task-bar task-method-opd" style="height: 58.3%;" title="Pick Pen — + OPD: 58.3">
                               <span class="task-bar-value">58.3</span>
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="+ Recovery Distill: 72.2">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 72.2%;" title="Pick Pen — + Recovery Distill: 72.2">
+                            <div class="task-bar task-method-recovery-distill" style="height: 72.2%;"
+                              title="Pick Pen — + Recovery Distill: 72.2">
                               <span class="task-bar-value">72.2</span>
                             </div>
                           </div>
@@ -674,8 +700,8 @@
                       <div class="task-group" role="group" aria-label="Pick Beverage">
                         <div class="task-bars" role="list" aria-label="Pick Beverage scores">
                           <div class="task-bar-wrap" role="listitem" aria-label="Offline Distill: 26.7">
-                            <div class="task-bar task-method-offline"
-                              style="height: 26.7%;" title="Pick Beverage — Offline Distill: 26.7">
+                            <div class="task-bar task-method-offline" style="height: 26.7%;"
+                              title="Pick Beverage — Offline Distill: 26.7">
                               <span class="task-bar-value">26.7</span>
                             </div>
                           </div>
@@ -686,8 +712,8 @@
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="+ Recovery Distill: 68.3">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 68.3%;" title="Pick Beverage — + Recovery Distill: 68.3">
+                            <div class="task-bar task-method-recovery-distill" style="height: 68.3%;"
+                              title="Pick Beverage — + Recovery Distill: 68.3">
                               <span class="task-bar-value">68.3</span>
                             </div>
                           </div>
@@ -741,14 +767,14 @@
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery BC: 48.6">
-                            <div class="task-bar task-method-recovery-bc"
-                              style="height: 48.6%;" title="Fold Dishcloth — Recovery BC: 48.6">
+                            <div class="task-bar task-method-recovery-bc" style="height: 48.6%;"
+                              title="Fold Dishcloth — Recovery BC: 48.6">
                               <span class="task-bar-value">48.6</span>
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery Distill: 54.2">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 54.2%;" title="Fold Dishcloth — Recovery Distill: 54.2">
+                            <div class="task-bar task-method-recovery-distill" style="height: 54.2%;"
+                              title="Fold Dishcloth — Recovery Distill: 54.2">
                               <span class="task-bar-value">54.2</span>
                             </div>
                           </div>
@@ -764,14 +790,14 @@
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery BC: 63.0">
-                            <div class="task-bar task-method-recovery-bc"
-                              style="height: 63.0%;" title="Pick Pen — Recovery BC: 63.0">
+                            <div class="task-bar task-method-recovery-bc" style="height: 63.0%;"
+                              title="Pick Pen — Recovery BC: 63.0">
                               <span class="task-bar-value">63.0</span>
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery Distill: 72.2">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 72.2%;" title="Pick Pen — Recovery Distill: 72.2">
+                            <div class="task-bar task-method-recovery-distill" style="height: 72.2%;"
+                              title="Pick Pen — Recovery Distill: 72.2">
                               <span class="task-bar-value">72.2</span>
                             </div>
                           </div>
@@ -787,14 +813,14 @@
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery BC: 50.0">
-                            <div class="task-bar task-method-recovery-bc"
-                              style="height: 50.0%;" title="Pick Beverage — Recovery BC: 50.0">
+                            <div class="task-bar task-method-recovery-bc" style="height: 50.0%;"
+                              title="Pick Beverage — Recovery BC: 50.0">
                               <span class="task-bar-value">50.0</span>
                             </div>
                           </div>
                           <div class="task-bar-wrap" role="listitem" aria-label="Recovery Distill: 68.3">
-                            <div class="task-bar task-method-recovery-distill"
-                              style="height: 68.3%;" title="Pick Beverage — Recovery Distill: 68.3">
+                            <div class="task-bar task-method-recovery-distill" style="height: 68.3%;"
+                              title="Pick Beverage — Recovery Distill: 68.3">
                               <span class="task-bar-value">68.3</span>
                             </div>
                           </div>
@@ -1185,7 +1211,12 @@
           <button class="copy-citation-button" type="button" data-copy-target="citation-bibtex"
             aria-label="Copy BibTeX citation">Copy</button>
         </div>
-        <pre><code id="citation-bibtex"><!-- Add BibTeX here. --></code></pre>
+        <pre><code id="citation-bibtex">@article{lu2026tilde,
+title={TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models}, 
+author={Yuxiang Lu and Yantong Liu and Jinghua Hou and Xueli Sun and Ruihua Han and Zhe Liu and Hengshuang Zhao},
+year={2026},
+journal={arXiv preprint arXiv:2610.25376},
+}</code></pre>
         <p class="copy-status" role="status" aria-live="polite"></p>
       </div>
     </section>
