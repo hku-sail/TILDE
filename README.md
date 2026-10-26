@@ -32,6 +32,8 @@
 
 Can we transfer the capabilities of pretrained embodied foundation models without repeating expensive action pretraining? **TILDE** addresses this challenge by distilling teacher knowledge across **demonstrations, student-induced rollouts, and teacher-executed recovery trajectories**, improving task performance by **up to 4.1× over behavior cloning**. At its core, AutoDAgger enables autonomous data collection by monitoring student execution and triggering teacher intervention, collecting recovery experience **2.2-2.6× faster than human-in-the-loop takeover**, without human monitoring or manual control.
 
+[▶ Watch the demo video](https://hku-sail.github.io/TILDE/static/videos/Demo.mp4)
+
 ## 📰 News
 
 - **Oct 20 2026**: Paper released.
